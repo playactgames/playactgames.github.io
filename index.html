@@ -1,73 +1,67 @@
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PlayAct Games</title>
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  background:#101827;
-  color:#fff;
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
 }
-main{
-  max-width:900px;
-  margin:auto;
-  padding:70px 20px;
-  text-align:center;
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px;
+  text-align: center;
 }
-h1{font-size:38px;margin-bottom:8px}
-.subtitle{color:#aab5c5;margin-bottom:45px}
-.games{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:20px;
+h1 { font-size: 40px; }
+.subtitle { color: #aab5c5; margin-bottom: 45px; }
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
 }
-.game{
-  background:#1d293b;
-  padding:30px 20px;
-  border-radius:16px;
-  text-decoration:none;
-  color:#fff;
-  transition:transform .2s,background .2s;
+.game {
+  display: block;
+  padding: 35px 20px;
+  background: #1d293b;
+  border-radius: 16px;
+  color: white;
+  text-decoration: none;
 }
-.game:hover{
-  transform:translateY(-5px);
-  background:#293950;
-}
-.game h2{margin:10px 0}
-.game p{color:#b6c2d2;font-size:14px}
-footer{margin-top:55px;color:#8996a8;font-size:13px}
+.game:hover { background: #293950; }
+.game p { color: #b6c2d2; }
+footer { margin-top: 55px; color: #8996a8; }
 </style>
 </head>
 <body>
 <main>
-  <h1>PlayAct Games</h1>
-  <p class="subtitle">Discover our games</p>
+<h1>PlayAct Games</h1>
+<p class="subtitle">Discover our games</p>
 
-  <div class="games">
-    <a class="game" href="/skyrush/">
-      <h2>SkyRush</h2>
-      <p>Explore SkyRush</p>
-    </a>
+<div class="games">
+<a class="game" href="/skyrush/">
+<h2>SkyRush</h2>
+<p>Explore SkyRush</p>
+</a>
 
-    <a class="game" href="/hoopswipes/">
-      <h2>HoopSwipes</h2>
-      <p>Explore HoopSwipes</p>
-    </a>
+<a class="game" href="/hoopswipes/">
+<h2>HoopSwipes</h2>
+<p>Explore HoopSwipes</p>
+</a>
 
-    <a class="game" href="/blockbuilder/">
-      <h2>Block Builder</h2>
-      <p>Explore Block Builder</p>
-    </a>
-  </div>
+<a class="game" href="/blockbuilder/">
+<h2>Block Builder</h2>
+<p>Explore Block Builder</p>
+</a>
+</div>
 
-  <footer>
-    © 2026 PlayAct Games. All rights reserved.
-  </footer>
+<footer>© 2026 PlayAct Games. All rights reserved.</footer>
 </main>
 </body>
 </html>
