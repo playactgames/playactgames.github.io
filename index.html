@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,24 +6,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PlayAct Games</title>
 <style>
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
-  main{max-width:720px;margin:0 auto;padding:48px 20px}
-  h1{color:#fff;margin:0 0 8px}
-  a{color:#fb923c}
-  .card{background:#1e293b;border-radius:14px;padding:20px;margin-top:24px}
-  footer{margin-top:40px;font-size:14px;color:#94a3b8}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:#101827;
+  color:#fff;
+}
+main{
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+  text-align:center;
+}
+h1{font-size:38px;margin-bottom:8px}
+.subtitle{color:#aab5c5;margin-bottom:45px}
+.games{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+.game{
+  background:#1d293b;
+  padding:30px 20px;
+  border-radius:16px;
+  text-decoration:none;
+  color:#fff;
+  transition:transform .2s,background .2s;
+}
+.game:hover{
+  transform:translateY(-5px);
+  background:#293950;
+}
+.game h2{margin:10px 0}
+.game p{color:#b6c2d2;font-size:14px}
+footer{margin-top:55px;color:#8996a8;font-size:13px}
 </style>
 </head>
 <body>
 <main>
   <h1>PlayAct Games</h1>
-  <p>Small, fun mobile games.</p>
-  <div class="card">
-    <h2>HoopSwipes</h2>
-    <p>Swipe to shoot hoops, chain swishes and climb the leaderboards.</p>
-    <p><a href="hoopswipes/">HoopSwipes page</a> · <a href="hoopswipes/privacy.html">Privacy Policy</a></p>
+  <p class="subtitle">Discover our games</p>
+
+  <div class="games">
+    <a class="game" href="/SkyRush/">
+      <h2>SkyRush</h2>
+      <p>Explore SkyRush</p>
+    </a>
+
+    <a class="game" href="/HoopSwipes/">
+      <h2>HoopSwipes</h2>
+      <p>Explore HoopSwipes</p>
+    </a>
+
+    <a class="game" href="/BlockBuilder/">
+      <h2>Block Builder</h2>
+      <p>Explore Block Builder</p>
+    </a>
   </div>
-  <footer>Contact: <a href="mailto:playactgames.pa@gmail.com">playactgames.pa@gmail.com</a></footer>
+
+  <footer>
+    © 2026 PlayAct Games. All rights reserved.
+  </footer>
 </main>
 </body>
 </html>
+```
